@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Bank Project Regression Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Bank Test Cases(failed)">
+    <parameter name="title" value="Studymate"/>
+    <parameter name="url" value="https://codewise.studymate.us/admin/groups?size=10page=1"/>
+    <classes>
+      <class name="studymate.tests.LoginTest">
+        <methods>
+          <include name="validateHappyPathLoginFunctionality" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- studymate.tests.LoginTest -->
+    </classes>
+  </test> <!-- Bank Test Cases(failed) -->
+</suite> <!-- Failed suite [Bank Project Regression Suite] -->

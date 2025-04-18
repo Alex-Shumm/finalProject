@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Studymate Project Regression Suite">
+
+
+    <test name="Studymate Test Cases">
+        <parameter name="url" value="https://codewise.studymate.us/admin/groups?size=10page=1"/>
+        <parameter name="title" value="Studymate"/>
+        <parameter name="courseTitle" value="API Course"> </parameter>
+        <parameter name="courseDate" value="14/03/25"> </parameter>
+        <parameter name="courseDesc" value="API Course: Learn the fundamentals of APIs."> </parameter>
+        <classes>
+            <class name="studymate.tests.LoginTest"/>
+            <class name="studymate.tests.GroupsTest"/>
+            <class name="studymate.tests.TeachersTest"/>
+            <class name="studymate.tests.StudentsTest"/>
+            <class name="studymate.tests.AnnouncementTest"/>
+            <class name="studymate.tests.TrashTest"/>
+            <class name="studymate.tests.ScheduleTest"/>
+        </classes>
+
+    </test>
+
+
+</suite>
